@@ -27,6 +27,10 @@ struct ContentView: View {
       }
     }
     .mapStyle(.standard)
+    .overlay(alignment: .topTrailing) {
+      AvatarView()
+        .padding(16)
+    }
     .sheet(isPresented: $showSheet) {
       Text("Selected item:")
         .interactiveDismissDisabled(true)
@@ -54,6 +58,20 @@ struct ContentView: View {
         modelContext.delete(items[index])
       }
     }
+  }
+}
+
+/// A circular avatar image view
+struct AvatarView: View {
+  var body: some View {
+    Image(systemName: "person.crop.circle.fill")
+      .resizable()
+      .aspectRatio(contentMode: .fit)
+      .frame(width: 40, height: 40)
+      .foregroundColor(.blue)
+      .background(Color.white)
+      .clipShape(Circle())
+      .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 1)
   }
 }
 
