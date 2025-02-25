@@ -27,11 +27,21 @@ struct ContentView: View {
           .tag(item.id)
       }
     }
-    .mapStyle(.standard)
+    .mapStyle(
+      .standard(
+        elevation: .realistic,
+        pointsOfInterest: .all,
+        showsTraffic: true
+      )
+    )
     .overlay(alignment: .topTrailing) {
-      AvatarView()
-        .padding(16)
+      VStack {
+        AvatarView()
+      }
+      .padding(.trailing)
+      .buttonBorderShape(.circle)
     }
+    .mapControlVisibility(.hidden)
     .sheet(isPresented: $showSheet) {
       Text("Selected item:")
         .presentationBackground(.thinMaterial)
@@ -62,17 +72,22 @@ struct ContentView: View {
   }
 }
 
-/// A circular avatar image view
+/// A circular avatar image view that matches MapKit control styling
 struct AvatarView: View {
   var body: some View {
-    Image(systemName: "person.crop.circle.fill")
-      .resizable()
-      .aspectRatio(contentMode: .fit)
-      .frame(width: 40, height: 40)
-      .foregroundColor(.blue)
-      .background(Color.white)
-      .clipShape(Circle())
-      .shadow(color: .black.opacity(0.2), radius: 3, x: 0, y: 1)
+    Button(action: {
+      // Avatar action here
+    }) {
+      Image(systemName: "person.fill")
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 18, height: 18)
+        .foregroundStyle(.primary)
+        .padding(12)
+    }
+    .background(.ultraThickMaterial)
+    .clipShape(Circle())
+    .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
   }
 }
 
