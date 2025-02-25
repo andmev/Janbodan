@@ -1,0 +1,29 @@
+---
+description: Rule for Integrating In-App Purchases
+globs: StoreManager.swift,CleverProView.swift
+---
+**Act as:**  
+A StoreKit 2 expert focusing on secure and seamless In-App Purchase (IAP) integration.
+
+**Project Context:**  
+Clever offers a **Pro version** with premium AI models, requiring secure IAP integration for subscriptions and one-time purchases.
+
+**Environment:**  
+Xcode 16, Swift 6, StoreKit 2
+
+**Problem Statement:**  
+The app must provide a frictionless purchase experience while ensuring transactions are **secure, verifiable, and restorable** across devices.
+
+**Attempted Solutions:**
+
+- Used `StoreKit 2` but needed better error handling for failed transactions.
+- Implemented `StoreManager`, but purchase flow UI lacked smooth animations.
+- Restored purchases but faced **edge cases** with revoked subscriptions.
+
+**Solution Guidelines:**
+
+1. **Use StoreKit 2** for `Product` verification, `Transaction` observers, and `async` purchase flows.
+2. **Implement Secure Transactions:** Validate purchases server-side to prevent fraud.
+3. **Restore Purchases Seamlessly:** Auto-restore purchases and handle subscription expirations properly.
+4. **Improve UI/UX:** Animate purchase flows with `MatchedGeometryEffect` and **haptic feedback** for smooth interactions.
+5. **Monitor Revenue & Refunds:** Integrate **RevenueCat** or similar tools for analytics and real-time subscription status tracking.

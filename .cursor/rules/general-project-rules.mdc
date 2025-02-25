@@ -1,0 +1,134 @@
+---
+description: General Rules for Project
+globs: *.swift
+---
+# General Project Structure & Best Practices for Clever – AI Chat Application  
+
+**Act as:**  
+A Swift architecture expert ensuring a **clean, scalable, and modular project structure** for a high-performance AI chat application.  
+
+**Project Context:**  
+Clever is a **cross-platform AI chat application** supporting **iOS, macOS, and visionOS** with multiple AI providers, speech recognition, and premium features.  
+
+**Environment:**  
+Xcode 16, Swift 6  
+
+**Problem Statement:**  
+A large, feature-rich SwiftUI project requires a **well-structured architecture** to ensure:  
+- **Maintainability**: Clear separation of concerns  
+- **Scalability**: Easy feature expansion  
+- **Performance**: Efficient and optimized data flows  
+- **Consistency**: Adherence to Apple’s best practices  
+
+**Attempted Solutions:**  
+- Used a **flat folder structure**, but led to **code organization issues**.  
+- Tried **grouping files by type**, but resulted in **tight coupling** of components.  
+- Implemented **modular feature-based organization**, which improved maintainability.  
+
+## **📂 Project Structure & Best Practices**  
+
+### **📁 @App/**
+Core app files, including entry points and global environment setup.  
+
+#### **📄 CleverApp.swift** (Main app entry point)  
+✅ Use `@main` to define the primary app structure.  
+✅ Configure **SwiftData** for persistence.  
+✅ Integrate **Sentry** for real-time error tracking.  
+✅ Set up **environment managers** (`AuthManager`, `StoreManager`, etc.).  
+✅ Use platform-specific window handling for **iOS, macOS, and visionOS**.  
+
+#### **📄 ContentView.swift** (Root container)  
+✅ Acts as the **main navigation hub**.  
+✅ Provides **environment objects** to subviews.  
+✅ Implements **navigation stack** for seamless app flow.  
+✅ Uses **adaptive UI elements** based on the platform.  
+
+---
+
+### **📁 @Factories/**
+Handles **object creation and dependency injection** for modularity.  
+
+#### **Factory Best Practices**  
+✅ Use **static factory methods** to encapsulate object initialization.  
+✅ Avoid **direct instantiation of objects** inside view models.  
+
+#### **Key Factories:**  
+- `ProviderFactoryManager`: Creates AI provider instances (**OpenAI, Anthropic, Google**).  
+- `SpeechRecognitionFactory`: Instantiates speech services (**WhisperKit, Apple Speech**).  
+
+---
+
+### **📁 @Managers/**
+Handles **business logic, data processing, and app state management**.  
+
+#### **State & Logic Best Practices**  
+✅ Use **single responsibility principle** for each manager.  
+✅ Implement **`@Observable` and `@Bindable`** for state management.  
+✅ **No hardcoded dependencies**—use factory classes or dependency injection.  
+
+#### **Key Managers:**  
+- **Auth:** `AuthManager`, `AuthService`, `SecurityStorageManager` (handles authentication).  
+- **Chat:** `ChatProcessingManager`, `StreamingManager` (manages chat interactions).  
+- **Download:** `HubModelDownloadManager`, `WhisperKitManager` (handles model downloads).  
+- **Providers:** `OpenAIManager`, `AnthropicManager`, `GoogleManager` (AI service implementations).  
+- **Speech:** `SpeechRecognitionManager`, `WhisperKitManager` (speech recognition logic).  
+- **Utility:** `HapticManager`, `ProviderConfigManager`, `StoreManager` (miscellaneous app utilities).  
+
+---
+
+### **📁 @Models/**
+Defines **SwiftData models, migrations, and data structures**.  
+
+#### **Data Model Best Practices**  
+✅ Use **SwiftData** for persistence instead of Core Data.  
+✅ Implement **versioned migrations** for schema updates.  
+✅ Separate **business logic from data models**.  
+
+#### **Key Models:**  
+- **Core Models:** `Chat`, `Message`, `Provider`, `Question`, `Service`.  
+- **Migrations:** `SchemaV0`, `SchemaV1`, `MigrationPlan`.  
+- **Type Definitions:** Enumerations and helper types.  
+
+---
+
+### **📁 @Protocols/**
+Defines **interfaces for dependency injection and modularity**.  
+
+#### **Protocol Best Practices**  
+✅ Use **protocols** to abstract functionality from concrete classes.  
+✅ Apply **protocol-oriented programming (POP)** principles.  
+✅ Avoid **overcomplicating** with unnecessary protocol hierarchies.  
+
+#### **Key Protocols:**  
+- `SpeechRecognitionProtocol`: Defines speech-to-text operations.  
+- `TextClassifierProtocol`: Abstracts AI text classification logic.  
+
+---
+
+### **📁 @Views/**
+SwiftUI views organized by feature and purpose.  
+
+#### **View Best Practices**  
+✅ Follow **MVVM**—views should only handle UI logic.  
+✅ Use **preview providers** for testing.  
+✅ Implement **modular, reusable components**.  
+✅ Support **adaptive layouts** across iOS, macOS, and visionOS.  
+
+#### **View Subfolders:**  
+- **📁 Actions/** → User interactions (buttons, inputs).  
+- **📁 Chat/** → Chat UI components.  
+- **📁 CleverPro/** → Premium feature screens.  
+- **📁 Common/** → Shared UI components (modals, alerts, loaders).  
+- **📁 Settings/** → User configuration screens.  
+- **📁 Welcome/** → Onboarding UI and first-time setup.  
+
+---
+
+## **Final Notes**  
+By following this **structured project organization**, Clever ensures:  
+✅ **Scalability** – Easy feature expansion with minimal refactoring.  
+✅ **Maintainability** – Clear separation of concerns.  
+✅ **Performance** – Efficient state management and modular logic.  
+✅ **Cross-Platform Support** – Optimized for iOS, macOS, and visionOS.  
+
+This structure follows **Apple’s best practices** and ensures a high-performance, maintainable AI chat application. 🚀  

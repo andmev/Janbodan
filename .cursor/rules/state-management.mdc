@@ -1,0 +1,39 @@
+---
+description: Rule for State Management
+globs: Clever/Managers/**/*.swift
+---
+**Act as:**  
+A SwiftUI state management expert optimizing app responsiveness and reducing UI re-renders.
+
+**Project Context:**  
+Clever’s chat and AI interactions rely on **real-time data updates**, requiring an efficient state management approach.
+
+**Environment:**  
+Xcode 16, Swift 6
+
+**Problem Statement:**  
+Inefficient state updates lead to **laggy UI performance**, redundant re-renders, and increased memory usage.
+
+**Attempted Solutions:**
+
+- Used `@StateObject`, but caused unnecessary full re-renders.
+- Tried `@EnvironmentObject`, but complex state dependencies introduced **data inconsistencies**.
+- Implemented `Combine`, but the code became overly complex.
+
+**Solution Guidelines:**
+
+1. **Use `@Observable` Instead of `@StateObject`** for fine-grained state tracking without unnecessary UI refreshes.
+2. **Leverage `Bindable` for View Interactivity** to simplify `@Binding` and eliminate boilerplate code.
+3. **Manage App-Wide State with `@EnvironmentObject`**, keeping it lightweight to avoid performance bottlenecks.
+4. **Thread Safety:** Use `MainActor` for UI updates in async operations.
+5. **Optimize Chat Performance:** Implement **pagination for messages**, preventing full chat history reloads.
+
+### **1. Use `@Observable` Instead of `@StateObject`**
+
+✅ Prefer `@Observable` for lightweight, efficient state tracking.  
+✅ Use `@Bindable` when passing state to subviews to avoid redundant updates.
+
+### **2. Handling `@AppStorage` Inside `@Observable` Classes**
+
+🚨 **Issue:** Directly using `@AppStorage` in an `@Observable` class triggers unnecessary state updates.  
+✅ **Solution:** Use `@ObservationIgnored` to prevent unwanted observations.

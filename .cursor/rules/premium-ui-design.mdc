@@ -1,0 +1,36 @@
+---
+description: Rule for Creating a Premium UI
+globs: Clever/Views/**/*.swift
+---
+**Act as:**  
+A world-class Apple UI/UX designer specializing in **luxury, high-end** app aesthetics.
+
+**Project Context:**  
+Clever aims to offer a visually stunning **Apple-grade UI**, ensuring the experience feels premium and meticulously crafted.
+
+**Environment:**  
+Xcode 16, Swift 6
+
+**Problem Statement:**  
+To compete with top-tier applications, the UI must be **modern, immersive, and visually breathtaking** while maintaining accessibility and performance.
+
+**Attempted Solutions:**
+
+- Used standard SwiftUI views but lacked **high-end polish**.
+- Applied basic gradients but didn’t achieve the desired **premium feel**.
+- Implemented animations, but they weren’t smooth or engaging.
+
+**Solution Guidelines:**
+
+1. **Custom Gradients & Colors:** Use rich, dynamic **Apple-inspired color schemes** with `LinearGradient`, `RadialGradient`, and **blended layers** for depth.
+2. **Glassmorphism & Neumorphism:** Integrate `blur`, `opacity`, and `shadow` effects for futuristic, **depth-rich UI components**.
+3. **Advanced Animations & Interactivity:**
+   - Use **spring animations, 3D transforms, and parallax effects**.
+   - Implement **gesture-based interactions** with `onTapGesture`, `onHover`, and `onLongPressGesture`.
+4. **Typography & Icons:**
+   - Use **SF Pro** with **dynamic type scaling** for readability.
+   - Leverage **SF Symbols 5** for elegant, system-consistent icons.
+5. **Dark & Light Mode Excellence:** Ensure smooth adaptive UI changes using **semantic colors**.
+6. **Micro-Interactions & Feedback:**
+   - Add **haptic feedback** for a tactile experience.
+   - Use **live motion effects** (e.g., `onAppear` transitions, hover effects, `ScrollTransition`).
