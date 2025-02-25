@@ -18,7 +18,6 @@ struct ContentView: View {
   @State private var selectedItem: MKMapItem? = nil
 
   @State private var showSheet: Bool = false
-  @State private var settingsDetent: PresentationDetent = .medium
 
   var body: some View {
     Map(position: $position, selection: $selectedItem) {
@@ -34,8 +33,7 @@ struct ContentView: View {
         .presentationCornerRadius(21)
         .presentationBackground(.thinMaterial)
         .presentationDetents(
-          [.medium, .large],
-          selection: $settingsDetent
+          [.height(256), .large]
         )
     }
     .onAppear {
