@@ -24,6 +24,7 @@ struct ContentView: View {
       ForEach(items) { item in
         // We could add markers here if Item had location data
         Marker("Item \(item.timestamp.formatted())", coordinate: .init(latitude: 0, longitude: 0))
+          .tag(item.id)
       }
     }
     .mapStyle(.standard)
@@ -33,12 +34,12 @@ struct ContentView: View {
     }
     .sheet(isPresented: $showSheet) {
       Text("Selected item:")
-        .interactiveDismissDisabled(true)
-        .presentationCornerRadius(21)
         .presentationBackground(.thinMaterial)
-        .presentationDetents(
-          [.height(256), .large]
-        )
+        .presentationCornerRadius(21)
+        .presentationDetents([.height(256), .large])
+        .presentationBackgroundInteraction(.enabled(upThrough: .large))
+        .presentationDragIndicator(.visible)
+        .interactiveDismissDisabled(true)
     }
     .onAppear {
       showSheet = true
