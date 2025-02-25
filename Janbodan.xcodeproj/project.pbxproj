@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B51FBC182D6DD42000BBC689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51FBBFB2D6DD41E00BBC689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51FBC022D6DD41E00BBC689;
+			remoteInfo = Janbodan;
+		};
+		B51FBC222D6DD42000BBC689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51FBBFB2D6DD41E00BBC689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51FBC022D6DD41E00BBC689;
+			remoteInfo = Janbodan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B51FBC032D6DD41E00BBC689 /* Janbodan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janbodan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FBC172D6DD42000BBC689 /* JanbodanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanbodanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FBC212D6DD42000BBC689 /* JanbodanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JanbodanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B51FBC292D6DD42000BBC689 /* Exceptions for "Janbodan" folder in "Janbodan" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B51FBC022D6DD41E00BBC689 /* Janbodan */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B51FBC052D6DD41E00BBC689 /* Janbodan */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B51FBC292D6DD42000BBC689 /* Exceptions for "Janbodan" folder in "Janbodan" target */,
+			);
+			path = Janbodan;
+			sourceTree = "<group>";
+		};
+		B51FBC1A2D6DD42000BBC689 /* JanbodanTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JanbodanTests;
+			sourceTree = "<group>";
+		};
+		B51FBC242D6DD42000BBC689 /* JanbodanUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JanbodanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51FBC002D6DD41E00BBC689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC142D6DD42000BBC689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC1E2D6DD42000BBC689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51FBBFA2D6DD41E00BBC689 = {
+			isa = PBXGroup;
+			children = (
+				B51FBC052D6DD41E00BBC689 /* Janbodan */,
+				B51FBC1A2D6DD42000BBC689 /* JanbodanTests */,
+				B51FBC242D6DD42000BBC689 /* JanbodanUITests */,
+				B51FBC042D6DD41E00BBC689 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51FBC042D6DD41E00BBC689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51FBC032D6DD41E00BBC689 /* Janbodan.app */,
+				B51FBC172D6DD42000BBC689 /* JanbodanTests.xctest */,
+				B51FBC212D6DD42000BBC689 /* JanbodanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51FBC022D6DD41E00BBC689 /* Janbodan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FBC2A2D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "Janbodan" */;
+			buildPhases = (
+				B51FBBFF2D6DD41E00BBC689 /* Sources */,
+				B51FBC002D6DD41E00BBC689 /* Frameworks */,
+				B51FBC012D6DD41E00BBC689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B51FBC052D6DD41E00BBC689 /* Janbodan */,
+			);
+			name = Janbodan;
+			packageProductDependencies = (
+			);
+			productName = Janbodan;
+			productReference = B51FBC032D6DD41E00BBC689 /* Janbodan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B51FBC162D6DD42000BBC689 /* JanbodanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FBC2F2D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "JanbodanTests" */;
+			buildPhases = (
+				B51FBC132D6DD42000BBC689 /* Sources */,
+				B51FBC142D6DD42000BBC689 /* Frameworks */,
+				B51FBC152D6DD42000BBC689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51FBC192D6DD42000BBC689 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B51FBC1A2D6DD42000BBC689 /* JanbodanTests */,
+			);
+			name = JanbodanTests;
+			packageProductDependencies = (
+			);
+			productName = JanbodanTests;
+			productReference = B51FBC172D6DD42000BBC689 /* JanbodanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B51FBC202D6DD42000BBC689 /* JanbodanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FBC322D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "JanbodanUITests" */;
+			buildPhases = (
+				B51FBC1D2D6DD42000BBC689 /* Sources */,
+				B51FBC1E2D6DD42000BBC689 /* Frameworks */,
+				B51FBC1F2D6DD42000BBC689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51FBC232D6DD42000BBC689 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B51FBC242D6DD42000BBC689 /* JanbodanUITests */,
+			);
+			name = JanbodanUITests;
+			packageProductDependencies = (
+			);
+			productName = JanbodanUITests;
+			productReference = B51FBC212D6DD42000BBC689 /* JanbodanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51FBBFB2D6DD41E00BBC689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					B51FBC022D6DD41E00BBC689 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					B51FBC162D6DD42000BBC689 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = B51FBC022D6DD41E00BBC689;
+					};
+					B51FBC202D6DD42000BBC689 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = B51FBC022D6DD41E00BBC689;
+					};
+				};
+			};
+			buildConfigurationList = B51FBBFE2D6DD41E00BBC689 /* Build configuration list for PBXProject "Janbodan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B51FBBFA2D6DD41E00BBC689;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B51FBC042D6DD41E00BBC689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51FBC022D6DD41E00BBC689 /* Janbodan */,
+				B51FBC162D6DD42000BBC689 /* JanbodanTests */,
+				B51FBC202D6DD42000BBC689 /* JanbodanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51FBC012D6DD41E00BBC689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC152D6DD42000BBC689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC1F2D6DD42000BBC689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51FBBFF2D6DD41E00BBC689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC132D6DD42000BBC689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FBC1D2D6DD42000BBC689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B51FBC192D6DD42000BBC689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51FBC022D6DD41E00BBC689 /* Janbodan */;
+			targetProxy = B51FBC182D6DD42000BBC689 /* PBXContainerItemProxy */;
+		};
+		B51FBC232D6DD42000BBC689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51FBC022D6DD41E00BBC689 /* Janbodan */;
+			targetProxy = B51FBC222D6DD42000BBC689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B51FBC2B2D6DD42000BBC689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Janbodan/Janbodan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Janbodan/Preview Content\"";
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Janbodan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.Janbodan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B51FBC2C2D6DD42000BBC689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Janbodan/Janbodan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Janbodan/Preview Content\"";
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Janbodan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.Janbodan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B51FBC2D2D6DD42000BBC689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B51FBC2E2D6DD42000BBC689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B51FBC302D6DD42000BBC689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.JanbodanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Janbodan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Janbodan";
+			};
+			name = Debug;
+		};
+		B51FBC312D6DD42000BBC689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.JanbodanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Janbodan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Janbodan";
+			};
+			name = Release;
+		};
+		B51FBC332D6DD42000BBC689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.JanbodanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Janbodan;
+			};
+			name = Debug;
+		};
+		B51FBC342D6DD42000BBC689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC3EMY227G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appalachi.JanbodanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Janbodan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51FBBFE2D6DD41E00BBC689 /* Build configuration list for PBXProject "Janbodan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FBC2D2D6DD42000BBC689 /* Debug */,
+				B51FBC2E2D6DD42000BBC689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FBC2A2D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "Janbodan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FBC2B2D6DD42000BBC689 /* Debug */,
+				B51FBC2C2D6DD42000BBC689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FBC2F2D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "JanbodanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FBC302D6DD42000BBC689 /* Debug */,
+				B51FBC312D6DD42000BBC689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FBC322D6DD42000BBC689 /* Build configuration list for PBXNativeTarget "JanbodanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FBC332D6DD42000BBC689 /* Debug */,
+				B51FBC342D6DD42000BBC689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51FBBFB2D6DD41E00BBC689 /* Project object */;
+}
